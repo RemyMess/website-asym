@@ -25,6 +25,7 @@ import Sw3 from '@/assets/vc/white/sw3.png';
 // import EntrepreneurFirstLogo from '@/assets/vc/white/entrepreneurFirst.png';
 // import animationIphoneGif from '@/assets/animation-iphone.gif';
 
+import F1Logo from '@/assets/f1_logo.png';
 
 import TextTransition, { presets } from 'react-text-transition';
 
@@ -71,7 +72,7 @@ $ curl -X POST localhost:8080/classify -F "image=@chihuahua.jpg"
 
 const trustedList = [
   { logo: PalantirLogo, name: 'Palantir' },
-  { logo: RenaultLogo, name: 'UN' },
+  { logo: F1Logo, name: 'F1' },
   { logo: ImperialLogo, name: 'Imperial' },
   { logo: OxfordLogo, name: 'Oxford' },
   { logo: YCLogo, name: 'YC' },
@@ -198,6 +199,17 @@ const Hero = () => {
   //   "Thermal Management"
   // ];
 
+
+  // const TEXTS = [
+  //   "Voltage Mismatch",
+  //   "Protocol Mismatch",
+  //   "Power Specs",
+  //   "Mechanical Fit",
+  //   "Software Mismatch",
+  //   "Connector Mismatch",
+  //   "Thermal Management"
+  // ];
+
   // const TEXTS2 = [
   //   "software",
   //   "hardware",
@@ -208,10 +220,11 @@ const Hero = () => {
     "hardware incompatibility",
     "software incompatibility",
     "firmware versioning",
+    "300 pages PRD",
     "cross-team discord",
-    "documentation searching",
     "connector disparity",
     "internal misalignment",
+    "documentation searching",
     "protocol incompatibility",
     "documentation reading",
     "thermal incompatibility",
@@ -249,7 +262,7 @@ const Hero = () => {
           {" "} nightmares
           </h1>
           <h2 className={styles.subtitle}>
-          Leverage our AI knowledge hub to avoid component incompatibilities & keep your teams aligned, from design, AI, automation and more.
+          Leverage our AI knowledge hub tailored for large teams building mechanical products, featuring compatibility checks between any components.
 
             {/* Save hours of doc reading, prevent dozens of development mistakes, by using our intelligent compability between every components of robotic systems. */}
           </h2>
@@ -364,7 +377,7 @@ const Hero = () => {
 
       <div className={styles.logosOuter}>
         <div className={`containerBig`}>
-          <h3>Trusted by:</h3>
+          <h3>Team from:</h3>
           <div className={styles.logosWrap}>
             {trustedList.map((v, index) => (
               <Image
