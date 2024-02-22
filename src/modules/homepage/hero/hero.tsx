@@ -207,12 +207,13 @@ const Hero = () => {
   const TEXTS = [
     "hardware incompatibility",
     "software incompatibility",
-    "firmware incompatibility",
-    "doc searching",
+    "firmware versioning",
+    "cross-team discord",
+    "documentation searching",
     "connector disparity",
-    "recurring misalignment",
+    "internal misalignment",
     "protocol incompatibility",
-    "doc reading",
+    "documentation reading",
     "thermal incompatibility",
     "mechanical misfit",
     "power supply mismatch",
@@ -242,13 +243,13 @@ const Hero = () => {
           central */}
 
           {/* Intelligent knowledge hubs tailored to mechanics team */}
-          The end of cross-team
+          The end of
           {" "}
           <TextTransition translateValue="20%" direction={"down"} inline={true} springConfig={presets.wobbly}> {TEXTS[indexChangingTitle % TEXTS.length]}</TextTransition>
           {" "} nightmares
           </h1>
           <h2 className={styles.subtitle}>
-          Leverage our AI-powered ALM as the central hub for your design, AI, automation teams and more.
+          Leverage our AI-powered ALM as the central hub for your teams featuring unlimited component compatibility checks, from design, AI, automation and more.
 
             {/* Save hours of doc reading, prevent dozens of development mistakes, by using our intelligent compability between every components of robotic systems. */}
           </h2>
