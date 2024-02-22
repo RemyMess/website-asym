@@ -1,0 +1,100 @@
+.outer {
+  position: relative;
+}
+
+.inner {
+}
+
+.formWrap {
+  min-width: 40%;
+}
+
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+  .inputFileWrap {
+    position: relative;
+  }
+  label {
+    font-size: var(--fs-32);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  input {
+    border: 1px solid var(--c-white);
+    border-radius: 8px;
+    font-size: var(--fs-20);
+    padding: 9px 10px;
+    width: 100%;
+    background: transparent;
+  }
+
+  .inputFile {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .fakeDrop {
+    border: 1px solid var(--c-white);
+    border-radius: 8px;
+    font-size: var(--fs-20);
+    padding: 30px 10px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dropPlus {
+    background: var(--c-gradient);
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    color: var(--c-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+  }
+}
+
+.bodyWrap {
+  color: var(--c-text-body);
+  font-size: var(--fs-20);
+  h2 {
+    font-size: var(--fs-32);
+    margin: 0 0 1rem 0;
+  }
+  p {
+    margin: 0 0 1rem 0;
+  }
+  .aboutText {
+    margin: 0 0 3rem 0;
+  }
+}
+
+.backgroundImage {
+  top: initial;
+  bottom: -40%;
+}
+
+@media (max-width: 1500px) {
+  .backgroundImage {
+    top: initial;
+    bottom: -20%;
+  }
+}
+@media (max-width: 768px) {
+  .formWrap {
+    min-width: initial;
+    width: 100%;
+    button {
+      margin: 0 0 0 auto;
+    }
+  }
+}

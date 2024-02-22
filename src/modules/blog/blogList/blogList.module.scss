@@ -1,0 +1,33 @@
+.articlesInner {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(352px, 1fr));
+  gap: var(--gap);
+}
+
+.title {
+  font-size: var(--fs-32);
+  display: flex;
+  margin: 0 0 2rem 0;
+  img {
+    max-width: 32px;
+    aspect-ratio: 1/1;
+  }
+  span {
+    margin: 0 0 0 10px;
+  }
+}
+
+.articlesInnerMobile {
+  display: none;
+}
+
+@media (max-width: 630px) {
+  .articlesInner {
+    display: none;
+  }
+  .articlesInnerMobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+    gap: var(--gap);
+  }
+}

@@ -1,0 +1,137 @@
+.outer {
+  padding: 9rem var(--gap) 30rem var(--gap);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title {
+  font-size: var(--fs-56);
+  margin: 0 0 1rem 0;
+}
+
+.subTitle {
+  font-size: var(--fs-20);
+  max-width: 430px;
+  font-family: var(--inter-font);
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+}
+
+.imageWrap {
+  position: relative;
+  .image1 {
+    position: relative;
+    left: -103px;
+    top: 18px;
+    max-width: 277px;
+    height: auto;
+  }
+  .image2 {
+    position: absolute;
+    left: 200px;
+    top: -48px;
+  }
+  .image3 {
+    position: absolute;
+    bottom: -288px;
+    left: -275px;
+  }
+  .image4 {
+    position: absolute;
+    left: 200px;
+    bottom: -236px;
+    width: 308px;
+    height: auto;
+  }
+  .badge {
+    position: absolute;
+    background: #eceded;
+    box-shadow: 0px 12px 24px rgba(0, 4, 25, 0.15);
+    border-radius: 16px;
+    color: var(--c-secondary);
+    display: flex;
+    align-items: center;
+    padding: 13px 12px;
+    font-weight: 700;
+    img {
+      margin: 0 0 0 5px;
+    }
+  }
+  .badge1 {
+    position: absolute;
+    top: 203px;
+    left: 14px;
+    padding: 13px 18px;
+  }
+  .badge2 {
+    position: absolute;
+    right: -47px;
+    bottom: -200px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .imageWrap {
+    left: 80px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .imageWrap {
+    left: 80px;
+    top: 50px;
+    .image1 {
+      visibility: hidden;
+    }
+    .image2 {
+      left: 30px;
+    }
+    .badge2 {
+      right: 100px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .outer {
+    grid-template-columns: 1fr;
+  }
+  .imageWrap {
+    transform: scale(0.7);
+    left: 100px;
+    .image2 {
+      left: 200px;
+    }
+    .image3 {
+      bottom: -335px;
+    }
+    .image4 {
+      bottom: -284px;
+    }
+    .image1 {
+      visibility: visible;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .outer {
+    padding: 4rem var(--gap) 16rem var(--gap);
+  }
+  .imageWrap {
+    transform: scale(0.5);
+    left: 40px;
+  }
+
+  .title {
+    font-size: var(--fs-32);
+  }
+}
+
+@media (max-width: 375px) {
+  .imageWrap {
+    transform: scale(0.4);
+    left: 0px;
+  }
+}

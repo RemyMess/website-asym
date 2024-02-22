@@ -1,0 +1,25 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  .itemImage {
+    margin: 0 0 1.5rem 0;
+    max-width: 56px;
+  }
+  .itemTitle {
+    margin: 0 0 0.5rem 0;
+  }
+  .itemText {
+    max-width: 290px;
+    margin: 0 0 2rem 0;
+    color: var(--c-text-body);
+  }
+  .itemAnchor {
+    color: var(--c-white);
+    font-weight: 600;
+    font-size: var(--fs-14);
+    padding: 0 1rem calc(6rem / 16) 0;
+    border-bottom: 1px solid var(--c-secondary);
+    width: 50%;
+    min-width: 110px;
+  }
+}

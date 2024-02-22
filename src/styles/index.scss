@@ -1,0 +1,103 @@
+@import 'reset.scss';
+@import 'functions.scss';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--c-background);
+  font-family: var(--inter-font), sans-serif;
+  color: var(--c-white);
+}
+
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: var(--inter-font), sans-serif;
+  > main {
+    flex: 1 0 0;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--inter-font), sans-serif;
+}
+
+button {
+  font-family: var(--inter-font), sans-serif;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--gap);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.containerBig {
+  max-width: var(--container-width-big);
+  padding: 0 var(--gap);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.basicBackgroundImage {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  filter: blur(150px);
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 0;
+  cursor: crosshair;
+  user-select: none;
+  @media (max-width: 630px) {
+    object-fit: contain;
+    width: auto;
+    filter: blur(60px);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--roboto-font), sans-serif;
+}
+
+.seoLink {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

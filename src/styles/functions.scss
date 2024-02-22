@@ -1,0 +1,54 @@
+$lines: 1, 2, 3, 4, 5;
+
+@each $line in $lines {
+  .truncate-#{$line} {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    line-clamp: $line;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.scrollbar {
+  @media (prefers-color-scheme: light) {
+    &::-webkit-scrollbar-track {
+      position: relative;
+      background-color: #eee;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    &::-webkit-scrollbar {
+      padding: 3px 0;
+      height: 10px;
+      background-color: #eee;
+      cursor: pointer;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    position: relative;
+    background-color: #eee;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar {
+    padding: 3px 0;
+    height: 10px;
+    background-color: #eee;
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

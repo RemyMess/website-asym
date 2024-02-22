@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 74px);
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .main {
+    justify-content: flex-start;
+    padding: 0 0 3rem 0;
+  }
+}

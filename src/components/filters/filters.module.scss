@@ -1,0 +1,30 @@
+.outer {
+  padding: 4rem var(--gap);
+  position: relative;
+}
+
+.title {
+  font-size: var(--fs-16);
+  font-family: var(--inter-font);
+  font-weight: 300;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 2px;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.backgroundImage {
+  rotate: -20deg;
+  transform-origin: left;
+}
+
+@media (max-width: 1024px) {
+  .outer {
+    padding: 4rem 0;
+  }
+}

@@ -1,0 +1,110 @@
+.outer {
+  padding-top: 176px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.rightSide {
+  display: grid;
+  padding: 0 0 0 120px;
+  gap: var(--gap);
+  grid-template-columns: 1fr 1fr;
+  margin: -10px 0 0 0;
+}
+
+.title {
+  font-size: var(--fs-32);
+  margin: 0 0 1rem 0;
+}
+
+.body {
+  font-size: var(--fs-20);
+  margin: 0 0 1rem 0;
+}
+
+.buttonWrapper {
+  margin: var(--gap) 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--gap);
+}
+
+@media (max-width: 1024px) {
+  .outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightSide {
+    padding: 3rem 0 0 0;
+    max-width: 50%;
+    min-width: calc(200px * 2);
+  }
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonWrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 630px) {
+  .outer {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .rightSide {
+    max-width: 100%;
+    min-width: initial;
+  }
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .buttonWrapper {
+    justify-content: center;
+    width: 100%;
+    > button,
+    a {
+      min-width: initial !important;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .outer {
+    padding-top: 6rem;
+  }
+  .rightSide {
+    gap: var(--gap);
+  }
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    > button,
+    a {
+      min-width: initial !important;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+  }
+}

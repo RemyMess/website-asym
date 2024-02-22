@@ -1,0 +1,41 @@
+:root {
+  /* Basic box variables */
+  --gap: 32px;
+  --gap-s: 24px;
+  --container-width: calc(1120px + 2 * var(--gap));
+  --container-width-big: calc(1220px + 2 * var(--gap));
+
+  /* Colors */
+  --c-background: #000418;
+  --c-text: #eceded;
+  --c-text-body: #c4c5c9;
+  --c-primary: #0e1340;
+  --c-secondary: #0783e8;
+  --c-secondary: #0783e8;
+  --c-accent: #1ad8f2;
+  --c-accent-hover: #00b4cc;
+  --c-white: #fff;
+  --c-error: rgb(218, 15, 15);
+
+  /* Gradients */
+  --c-gradient: linear-gradient(
+    88.19deg,
+    #2e64ff 3.66%,
+    #25a9fb 46.77%,
+    #02e1ff 91.71%
+  );
+
+  /* Typography */
+  --inter-font: 'Inter', sans-serif;
+  --roboto-font: 'Roboto', sans-serif;
+
+  /* Font sizes */
+  --fs-56: calc(56rem / 16);
+  --fs-40: calc(40rem / 16);
+  --fs-32: calc(32rem / 16);
+  --fs-24: calc(24rem / 16);
+  --fs-20: calc(20rem / 16);
+  --fs-16: calc(16rem / 16);
+  --fs-14: calc(14rem / 16);
+  --fs-12: calc(12rem / 16);
+}
