@@ -151,7 +151,7 @@ const Hero = () => {
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndexChangingTitle((indexChangingTitle) => indexChangingTitle + 1),
-      1500, // every 1 seconds
+      2000, // every 1 seconds
     );
     return () => clearTimeout(intervalId);
   }, []);
@@ -205,14 +205,17 @@ const Hero = () => {
   // ];
 
   const TEXTS = [
-    "hardware",
-    "software",
-    "firmware",
-    "connector",
-    "protocol",
-    "thermal",
-    "mechanical",
-    "power supply",
+    "hardware incompatibility",
+    "software incompatibility",
+    "firmware incompatibility",
+    "doc searching",
+    "connector disparity",
+    "recurring misalignment",
+    "protocol incompatibility",
+    "doc reading",
+    "thermal incompatibility",
+    "mechanical misfit",
+    "power supply mismatch",
     // "motors"
     // "screws"
     ];
@@ -228,15 +231,31 @@ const Hero = () => {
       />
       <div className={`containerBig ${styles.inner}`}>
         <div className={styles.textInner}>
-          <h1 className={styles.title}>Instant{" "}
-          <TextTransition translateValue="25%" direction={"down"} inline={true} springConfig={presets.wobbly}> {TEXTS[indexChangingTitle % TEXTS.length]}</TextTransition>
-          {" "}compatibility check for any mechanical system
+
+          <h1 className={styles.title}>
+            {/* Intelligent ALM for large mechanics teams */}
+
+          {/* compatibility
+          large teams
+          mechanics
+          knowledge
+          central */}
+
+          {/* Intelligent knowledge hubs tailored to mechanics team */}
+          The end of cross-team
+          {" "}
+          <TextTransition translateValue="20%" direction={"down"} inline={true} springConfig={presets.wobbly}> {TEXTS[indexChangingTitle % TEXTS.length]}</TextTransition>
+          {" "} nightmares
           </h1>
           <h2 className={styles.subtitle}>
-            Save hours of doc reading, prevent dozens of development mistakes, by checking compability between every components of robotic systems.
-          </h2>
-          <form className={styles.formWrap} onSubmit={handleSubmit}>
+          Leverage our AI-powered ALM as the central hub for your design, AI, automation teams and more.
 
+            {/* Save hours of doc reading, prevent dozens of development mistakes, by using our intelligent compability between every components of robotic systems. */}
+          </h2>
+
+
+
+          {/* <form className={styles.formWrap} onSubmit={handleSubmit}> */}
           <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://zcal.co/remymess/asymmetrictext')}}>
                 {loading ? (
                   <span className={styles.loader}></span>
@@ -269,7 +288,7 @@ const Hero = () => {
               </Button> */}
             {/* </div> */}
             {error.error && <p className={styles.error}>{error.message}</p>}
-          </form>
+          {/* </form> */}
         </div>
 
         {/* <div className={styles.imageWrapper}> */}

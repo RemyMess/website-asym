@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Inferex"
-        description="Inferex deploys your models at scale, integrates them seamlessly into your application, and executes your workflows reliably."
+        title="Asymmetric Text"
+        description="Central intelligent source of truth for mechanical systems."
       />
       <Hero />
     </>
