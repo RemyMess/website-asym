@@ -249,7 +249,7 @@ const Hero = () => {
           {" "} nightmares
           </h1>
           <h2 className={styles.subtitle}>
-          Leverage our AI-powered ALM as the central hub for your teams featuring unlimited component compatibility checks, from design, AI, automation and more.
+          Leverage our AI knowledge hub to avoid component incompatibilities & keep your teams aligned, from design, AI, automation and more.
 
             {/* Save hours of doc reading, prevent dozens of development mistakes, by using our intelligent compability between every components of robotic systems. */}
           </h2>
