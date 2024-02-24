@@ -217,19 +217,21 @@ const Hero = () => {
   // ];
 
   const TEXTS = [
-    "hardware incompatibility",
-    "software incompatibility",
-    "firmware versioning",
-    "300 pages PRD",
-    "cross-team discord",
-    "connector disparity",
-    "internal misalignment",
-    "documentation searching",
-    "protocol incompatibility",
-    "documentation reading",
-    "thermal incompatibility",
-    "mechanical misfit",
-    "power supply mismatch",
+    "hardware incompatibilities",
+    "software incompatibilities",
+    // "protocol incompatibilities",
+    "power supply mismatches",
+    "internal misalignments",
+    "300 pages PRD reading",
+    "connector disparities",
+    "200-pages doc reading",
+    "daily 100 Slack DMs",
+    "cross-team discords",
+    "4h cable searching",
+    "mechanical misfits",
+    "thermal problems",
+    "2h doc searching",
+    // "firmware incompatibilities",
     // "motors"
     // "screws"
     ];
@@ -246,7 +248,7 @@ const Hero = () => {
       <div className={`containerBig ${styles.inner}`}>
         <div className={styles.textInner}>
 
-          <h1 className={styles.title}>
+          <h1 className={styles.title} style={{width: "60vh"}}>
             {/* Intelligent ALM for large mechanics teams */}
 
           {/* compatibility
@@ -257,12 +259,14 @@ const Hero = () => {
 
           {/* Intelligent knowledge hubs tailored to mechanics team */}
           The end of
-          {" "}
+          {"\n "}
           <TextTransition translateValue="20%" direction={"down"} inline={true} springConfig={presets.wobbly}> {TEXTS[indexChangingTitle % TEXTS.length]}</TextTransition>
-          {" "} nightmares
+          {"\n "} for mechanical projects
           </h1>
           <h2 className={styles.subtitle}>
-          Leverage our AI knowledge hub tailored for large teams building mechanical products, featuring compatibility checks between any components.
+            {/* Leverage our AI knowledge hub tailored for large teams building mechanical products, featuring compatibility checks between any components. */}
+
+            Empower all your robotics, mechanical, and software teams by linking your knowledge databases to our AI-Copilot, featuring compatibility checks & global hardware expertise.
 
             {/* Save hours of doc reading, prevent dozens of development mistakes, by using our intelligent compability between every components of robotic systems. */}
           </h2>
@@ -370,7 +374,7 @@ const Hero = () => {
             />
           </div> */}
 
-          <img src={"animation-iphone.gif"} style={{borderRadius: "35px", height: "100%", marginLeft: "auto", marginRight: "auto"}} alt="my-gif" />
+          <img src={"animation-iphone.gif"} style={{borderRadius: "35px", height: "50vh", justifyContent: "flex-end"}} alt="my-gif" />
 
         </div>
       </div>

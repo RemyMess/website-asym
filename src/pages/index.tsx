@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Asymmetric Text"
+        title="RobotDoc"
         description="AI knowledge Hub for mechanical teams."
       />
       <Hero />

@@ -26,7 +26,7 @@ const Seo = ({ title, JSONLD, description = 'Inferex' }: ISeoProps) => {
         `}
       </Script>
       <Head>
-        <title>{`${title} | Intelligent database for mechanical systems `}</title>
+        <title>{`${title} | Copilot for mechanical projects `}</title>
         <link
           rel="apple-touch-icon"
           sizes="57x57"
