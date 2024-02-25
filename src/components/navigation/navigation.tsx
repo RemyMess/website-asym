@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 // import Logo from '@/assets/logo.svg';
-import Logo from '@/assets/robodoc_logo1.png';
+import Logo from '@/assets/mechadoc_logo.png';
 
 import { urls } from '@/helpers/urls';
 import styles from './navigation.module.scss';
