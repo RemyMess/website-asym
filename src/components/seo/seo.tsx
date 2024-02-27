@@ -106,7 +106,7 @@ const Seo = ({ title, JSONLD, description = 'Inferex' }: ISeoProps) => {
         <meta name="twitter:description" content={description} />
         <meta
           property="twitter:image"
-          content={'https://inferex.com/ogimage.png'}
+          content={'https://mechadoc.io/ogimage.png'}
         />
         <meta property="og:site_name" content="Inferex" />
         <meta

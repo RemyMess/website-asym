@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="RobotDoc"
-        description="AI knowledge Hub for mechanical teams."
+        title="Mechadoc"
+        description="AI Copilot for mech teams."
       />
       <Hero />
     </>
