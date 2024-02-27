@@ -13,18 +13,22 @@ import RenaultLogo from '@/assets/renault-logo.png';
 
 import PalantirLogo from '@/assets/palantir_white.png';
 // import BlackRockLogo from '@/assets/vc/white/blackRock.png';
-import ImperialLogo from '@/assets/imperial_logo.png';
+import ImperialLogo from '@/assets/imperial_white.png';
 // import FacultyCapitalLogo from '@/assets/vc/white/facultyCapital.png';
 // import GoCardlessLogo from '@/assets/vc/white/gocar.png';
 import OxfordLogo from '@/assets/oxford_logo.png';
 import OutsizedVCLogo from '@/assets/vc/white/outvc.png';
 import SeedCampLogo from '@/assets/vc/white/seed.png';
 // import SongKickLogo from '@/assets/vc/white/songkick.png';
-import YCLogo from '@/assets/y_combinator.jpeg';
+import YCLogo from '@/assets/ycombinator.png';
 import Sw3 from '@/assets/vc/white/sw3.png';
-// import EntrepreneurFirstLogo from '@/assets/vc/white/entrepreneurFirst.png';
-// import animationIphoneGif from '@/assets/animation-iphone.gif';
+// import EntrepreneurFirstLogo from '@/assets/entrepreneur_first_logo.jpeg';
+import HarvardLogo from '@/assets/harvard_logo.png';
 
+
+
+// import animationIphoneGif from '@/assets/animation-iphone.gif';
+// entrepreneur_first_logo.jpeg
 import F1Logo from '@/assets/f1_logo.png';
 
 import TextTransition, { presets } from 'react-text-transition';
@@ -76,6 +80,9 @@ const trustedList = [
   { logo: ImperialLogo, name: 'Imperial' },
   { logo: OxfordLogo, name: 'Oxford' },
   { logo: YCLogo, name: 'YC' },
+  // { logo: EntrepreneurFirstLogo, name: 'EF' },
+  { logo: HarvardLogo, name: 'Harvard' },
+
   // { logo: OutsizedVCLogo, name: '' },
   // { logo: SeedCampLogo, name: 'Seedcamp' },
   // { logo: Sw3, name: 'Sw3' },
@@ -218,18 +225,19 @@ const Hero = () => {
 
   const TEXTS = [
     "hardware incompatibilities",
-    "software incompatibilities",
     // "protocol incompatibilities",
-    "power supply mismatches",
-    "internal misalignments",
-    "300 pages PRD reading",
+    // "internal misalignments",
+    // "300 pages PRD reading",
     "connector disparities",
     "200-pages doc reading",
+    "200-pages doc writing",
     "daily 100 Slack DMs",
     "cross-team discords",
+    "'Where's the doc?'",
     "4h cable searching",
     "mechanical misfits",
     "thermal problems",
+    "power mismatches",
     "2h doc searching",
     // "firmware incompatibilities",
     // "motors"
@@ -261,7 +269,7 @@ const Hero = () => {
           The end of
           {"\n "}
           <TextTransition translateValue="20%" direction={"down"} inline={true} springConfig={presets.wobbly}> {TEXTS[indexChangingTitle % TEXTS.length]}</TextTransition>
-          {"\n "} for mechanical projects
+          {"\n "} for mech teams
           </h1>
           <h2 className={styles.subtitle}>
             {/* Leverage our AI knowledge hub tailored for large teams building mechanical products, featuring compatibility checks between any components. */}
