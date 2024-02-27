@@ -274,7 +274,7 @@ const Hero = () => {
 
 
           {/* <form className={styles.formWrap} onSubmit={handleSubmit}> */}
-          <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://zcal.co/remymess/asymmetrictext')}}>
+          <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://zcal.co/remymess/mechadoc')}}>
                 {loading ? (
                   <span className={styles.loader}></span>
                 ) : (
