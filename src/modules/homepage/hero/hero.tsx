@@ -238,7 +238,6 @@ const Hero = () => {
     "mechanical misfits",
     "thermal problems",
     "power mismatches",
-    "2h doc searching",
     // "firmware incompatibilities",
     // "motors"
     // "screws"
@@ -274,7 +273,7 @@ const Hero = () => {
           <h2 className={styles.subtitle}>
             {/* Leverage our AI knowledge hub tailored for large teams building mechanical products, featuring compatibility checks between any components. */}
 
-            Empower all your robotics, mechanical, and software teams by linking your knowledge databases to our AI-Copilot, featuring compatibility checks & global hardware expertise.
+            Build complex mech systems faster & better by linking all your knowledge DBs, ERPs, & LPMs in one central AI-Copilot, consuming and producing docs whenever you need them.
 
             {/* Save hours of doc reading, prevent dozens of development mistakes, by using our intelligent compability between every components of robotic systems. */}
           </h2>
