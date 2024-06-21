@@ -299,6 +299,7 @@ const Hero = () => {
 
 
           {/* <form className={styles.formWrap} onSubmit={handleSubmit}> */}
+          <div style={{ display: 'flex', gap: '20px' }}>
           <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://zcal.co/remymess/mechadoc')}}>
                 {loading ? (
                   <span className={styles.loader}></span>
@@ -310,6 +311,19 @@ const Hero = () => {
                   </>
                 )}
               </Button>
+
+              <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('mechareg.netlify.app')}}>
+                {loading ? (
+                  <span className={styles.loader}></span>
+                ) : (
+                  <>
+                    {/* <a href="https://bobbyhadz.com" target="_blank" rel="noreferrer"></a> */}
+                      <span>Log in</span>
+                    {/* <a/> */}
+                  </>
+                )}
+              </Button>
+              </div>
 
 
             {/* <input className={styles.hidden} name="name" tabIndex={-1} />
