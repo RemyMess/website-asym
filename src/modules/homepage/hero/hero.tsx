@@ -307,17 +307,15 @@ const Hero = () => {
                 )}
               </Button>
 
-              <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://mechareg.netlify.app')}}>
+              {/* <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://mechareg.netlify.app')}}>
                 {loading ? (
                   <span className={styles.loader}></span>
                 ) : (
                   <>
-                    {/* <a href="https://bobbyhadz.com" target="_blank" rel="noreferrer"></a> */}
                       <span>Log in</span>
-                    {/* <a/> */}
                   </>
                 )}
-              </Button>
+              </Button> */}
               </div>
 
 
