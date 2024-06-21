@@ -286,13 +286,8 @@ const Hero = () => {
           </h1>
           <h2 className={styles.subtitle}>
             {/* Leverage our AI knowledge hub tailored for large teams building mechanical products, featuring compatibility checks between any components. */}
-
             {/* Build complex mech systems faster & better by linking all your knowledge DBs, ERPs, & LPMs in one central AI-Copilot, consuming and producing docs whenever you need them. */}
-
             Launch your medical device globally using our tailored automations & optimised workflows to get approvals in weeks not years.
-
-
-
             {/* Save hours of doc reading, prevent dozens of development mistakes, by using our intelligent compability between every components of robotic systems. */}
           </h2>
 
@@ -312,7 +307,7 @@ const Hero = () => {
                 )}
               </Button>
 
-              <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('mechareg.netlify.app')}}>
+              <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://mechareg.netlify.app')}}>
                 {loading ? (
                   <span className={styles.loader}></span>
                 ) : (
