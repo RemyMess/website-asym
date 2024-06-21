@@ -11,11 +11,11 @@
   cursor: pointer;
 
   &.cta {
-    background-color: var(--c-accent);
-    color: var(--c-primary);
+    background-color: black;
+    color: white;
     transition: 256ms background-color;
     &:hover {
-      background-color: var(--c-accent-hover);
+      background-color: #173BF4;
     }
     &:disabled {
       background-color: var(--c-body-text);

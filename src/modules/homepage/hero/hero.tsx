@@ -11,9 +11,9 @@ import ChevronBlack from '@/assets/icons/chevronBlack.svg';
 
 import RenaultLogo from '@/assets/renault-logo.png';
 
-import PalantirLogo from '@/assets/palantir_white.png';
+import PalantirLogo from '@/assets/palantir.png';
 // import BlackRockLogo from '@/assets/vc/white/blackRock.png';
-import ImperialLogo from '@/assets/imperial_white.png';
+import ImperialLogo from '@/assets/imperial.png';
 // import FacultyCapitalLogo from '@/assets/vc/white/facultyCapital.png';
 // import GoCardlessLogo from '@/assets/vc/white/gocar.png';
 import OxfordLogo from '@/assets/oxford_logo.png';
@@ -22,9 +22,9 @@ import SeedCampLogo from '@/assets/vc/white/seed.png';
 // import SongKickLogo from '@/assets/vc/white/songkick.png';
 import YCLogo from '@/assets/ycombinator.png';
 import Sw3 from '@/assets/vc/white/sw3.png';
-// import EntrepreneurFirstLogo from '@/assets/entrepreneur_first_logo.jpeg';
+import EntrepreneurFirstLogo from '@/assets/entrepreneur_first_logo.jpeg';
 import HarvardLogo from '@/assets/harvard_logo.png';
-
+import KingsCollege from "@/assets/kings.jpg"
 
 
 // import animationIphoneGif from '@/assets/animation-iphone.gif';
@@ -76,12 +76,15 @@ $ curl -X POST localhost:8080/classify -F "image=@chihuahua.jpg"
 
 const trustedList = [
   { logo: PalantirLogo, name: 'Palantir' },
-  { logo: F1Logo, name: 'F1' },
+  // { logo: F1Logo, name: 'F1' },
   { logo: ImperialLogo, name: 'Imperial' },
   { logo: OxfordLogo, name: 'Oxford' },
-  { logo: YCLogo, name: 'YC' },
+  { logo: KingsCollege, name: 'Kings' },
+  { logo: EntrepreneurFirstLogo, name: 'EF' },
+  // { logo: YCLogo, name: 'YC' },
+  
   // { logo: EntrepreneurFirstLogo, name: 'EF' },
-  { logo: HarvardLogo, name: 'Harvard' },
+  // { logo: HarvardLogo, name: 'Harvard' },
 
   // { logo: OutsizedVCLogo, name: '' },
   // { logo: SeedCampLogo, name: 'Seedcamp' },
@@ -224,20 +227,31 @@ const Hero = () => {
   // ];
 
   const TEXTS = [
-    "hardware incompatibilities",
+    "globally,",
+    "in the US,",
+    "globally,",
+    "in China,",
+    "in the UK,",
+    "globally,",
+    "in France,",
+    "in Spain,",
+    "in Germany,",
+    "globally,",
+
+    // "hardware incompatibilities",
     // "protocol incompatibilities",
     // "internal misalignments",
     // "300 pages PRD reading",
-    "connector disparities",
-    "200-pages doc reading",
-    "200-pages doc writing",
-    "daily 100 Slack DMs",
-    "cross-team discords",
-    "'Where's the doc?'",
-    "4h cable searching",
-    "mechanical misfits",
-    "thermal problems",
-    "power mismatches",
+    // "connector disparities",
+    // "200-pages doc reading",
+    // "200-pages doc writing",
+    // "daily 100 Slack DMs",
+    // "cross-team discords",
+    // "'Where's the doc?'",
+    // "4h cable searching",
+    // "mechanical misfits",
+    // "thermal problems",
+    // "power mismatches",
     // "firmware incompatibilities",
     // "motors"
     // "screws"
@@ -246,16 +260,16 @@ const Hero = () => {
 
   return (
     <div className={styles.outer}>
-      <img
+      {/* <img
         className={`basicBackgroundImage ${styles.backgroundImage}`}
         src={BackgroundImage.src}
         alt=""
         role="presentation"
-      />
+      /> */}
       <div className={`containerBig ${styles.inner}`}>
         <div className={styles.textInner}>
 
-          <h1 className={styles.title} style={{width: "60vh"}}>
+          <h1 className={styles.title} style={{width: "80%"}}>
             {/* Intelligent ALM for large mechanics teams */}
 
           {/* compatibility
@@ -265,15 +279,19 @@ const Hero = () => {
           central */}
 
           {/* Intelligent knowledge hubs tailored to mechanics team */}
-          The end of
+          Launch your medical device
           {"\n "}
           <TextTransition translateValue="20%" direction={"down"} inline={true} springConfig={presets.wobbly}> {TEXTS[indexChangingTitle % TEXTS.length]}</TextTransition>
-          {"\n "} for mech teams
+          {"\n in weeks not years."}
           </h1>
           <h2 className={styles.subtitle}>
             {/* Leverage our AI knowledge hub tailored for large teams building mechanical products, featuring compatibility checks between any components. */}
 
-            Build complex mech systems faster & better by linking all your knowledge DBs, ERPs, & LPMs in one central AI-Copilot, consuming and producing docs whenever you need them.
+            {/* Build complex mech systems faster & better by linking all your knowledge DBs, ERPs, & LPMs in one central AI-Copilot, consuming and producing docs whenever you need them. */}
+
+            Launch your medical device globally using our tailored automations & optimised workflows to get approvals in weeks not years.
+
+
 
             {/* Save hours of doc reading, prevent dozens of development mistakes, by using our intelligent compability between every components of robotic systems. */}
           </h2>
@@ -388,7 +406,7 @@ const Hero = () => {
 
       <div className={styles.logosOuter}>
         <div className={`containerBig`}>
-          <h3>Team from:</h3>
+          <h3>Team from</h3>
           <div className={styles.logosWrap}>
             {trustedList.map((v, index) => (
               <Image
