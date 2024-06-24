@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Seo
         title="Mechadoc"
-        description="AI Copilot for mech teams."
+        description="Automating compliance for hardware."
       />
       <Hero />
     </>
