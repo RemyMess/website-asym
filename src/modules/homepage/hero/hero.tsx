@@ -307,7 +307,9 @@ const Hero = () => {
                 )}
               </Button>
 
-              {/* <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://mechareg.netlify.app')}}>
+  
+
+              <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://auth.mechadoc.io')}}>
                 {loading ? (
                   <span className={styles.loader}></span>
                 ) : (
@@ -315,7 +317,7 @@ const Hero = () => {
                       <span>Log in</span>
                   </>
                 )}
-              </Button> */}
+              </Button>
               </div>
 
 

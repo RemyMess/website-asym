@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <nav className={`${styles.inner} containerBig`}>
       <Link href={urls.home} className={styles.logoLink}>
-        <Image src={Logo} alt="Inferex logo" priority={true} />
+        <Image src={Logo} alt="Mechadoc logo" priority={true} />
       </Link>
     </nav>
   );
