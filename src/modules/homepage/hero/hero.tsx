@@ -309,7 +309,7 @@ const Hero = () => {
 
   
 
-              <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://auth.mechadoc.io')}}>
+              {/* <Button variant="cta" size="medium" type="submit" onClick={()=>{window.location.replace('https://68115179.propelauthtest.com')}}>
                 {loading ? (
                   <span className={styles.loader}></span>
                 ) : (
@@ -317,7 +317,7 @@ const Hero = () => {
                       <span>Log in</span>
                   </>
                 )}
-              </Button>
+              </Button> */}
               </div>
 
 
