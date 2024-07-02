@@ -148,3 +148,4 @@ const Seo = ({ title, JSONLD, description = 'MechaDoc' }: ISeoProps) => {
 };
 
 export default Seo;
+
